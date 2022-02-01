@@ -251,7 +251,7 @@ html {
 header {
   background-image: url(../assets/herol2.jpg);
   margin: 0 auto;
-  height: 800px;
+  height: 1100px;
   width: 100%;
   background-attachment: fixed;
   background-position: center -900px;
@@ -262,16 +262,97 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
+  justify-content: center;
 }
 
-img {
-  width: 120px;
+.imgSkill {
+  width: 15%;
   margin: 30px 70px;
 }
 
-a {
-  text-decoration: none;
-  font-style: normal;
+.skill {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.project {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.aboutMe {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.aboutMeCont2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  width: 50%;
+}
+
+.pAboutMe {
+  font-size: 1.5rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.4rem;
+  line-height: 2.5rem;
+}
+
+.portrait {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.midiaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.socialMidia a {
+  margin: 10px 15px;
+  color: #405559;
+  font-size: 2rem;
+  border-bottom: none;
+  margin-bottom: 30px;
+}
+
+.socialMidia a:hover {
+  color: #68868C;
+  border-bottom: none;
+}
+
+footer {
+  height: 80px;
+  text-align: center;
+  background-color: #2020209c;
+  color: #EDEDED;
+  padding-top: 1%;
 }
 
 nav {
@@ -283,12 +364,12 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 55%;
+  width: 60%;
 }
 ul li {
   list-style: none;
 }
-ul li a {
+ul li .aNav {
   text-decoration: none;
   font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
@@ -296,9 +377,13 @@ ul li a {
   letter-spacing: 0.2rem;
   font-size: 1.6rem;
   transition: 0.4s ease-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: 1rem;
 }
 
-a:hover, a:focus {
+.aNav:hover, .aNav:focus {
   color: black;
   border-bottom: 1px solid black;
   transform: scale(20) skew(-20deg);

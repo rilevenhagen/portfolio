@@ -1,7 +1,4 @@
-a{
-    text-decoration: none;
-    font-style: normal;
-}
+
 
 nav{
     display: flex;
@@ -12,22 +9,26 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 55%;
+    width: 60%;
         li {
             list-style: none;
-            a{
+            .aNav{
             text-decoration: none;
             font-family: $fontFamily1;
             font-weight: bold;
             color: $colorwite;
             letter-spacing: 0.2rem;
             font-size: 1.6rem; 
-            transition: 0.4s ease-out;               
+            transition: 0.4s ease-out;
+            text-transform: uppercase; 
+            text-decoration: none;
+            font-style: normal;   
+            margin-left: 1rem;     
             }
     }
 }
 
-a:hover,a:focus {
+.aNav:hover,.aNav:focus {
     color:$black;
     border-bottom: 1px solid $black;
     transform: scale(20) skew(-20deg);

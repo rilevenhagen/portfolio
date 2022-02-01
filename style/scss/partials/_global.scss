@@ -35,7 +35,7 @@ html {
 header {
     background-image: url(../assets/herol2.jpg);
     margin: 0 auto;
-    height: 800px;
+    height: 1100px;
     width: 100%;
     background-attachment: fixed;
     background-position: center -900px;
@@ -48,10 +48,117 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
+    justify-content: center;
 }
 
-img{
-width: 120px;
+.imgSkill{
+width: 15%;
 margin: 30px 70px;
+}
+
+// =====================skills==========
+
+.skill{
+    text-align: center;
+    font-family: $fontFamily1;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+
+h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+// =====================ptoject==========
+
+.project{
+    text-align: center;
+    font-family: $fontFamily1;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+
+h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+// =====================ABOUT ME==========
+
+
+.aboutMe{
+    text-align: center;
+    font-family: $fontFamily1;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+
+}
+
+.aboutMeCont2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+            width: (100% / 2 );
+}
+
+.pAboutMe{
+    font-size: 1.5rem;
+    font-family: $fontFamily1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.4rem;
+    line-height: 2.5rem;
+}
+
+
+.portrait {
+    width: 100%;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 100%;
+}
+
+// =====================social midia==========
+
+
+.midiaContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.socialMidia{
+    a{
+        margin:10px 15px;
+        color: $darkLightColor;
+        font-size: 2rem;
+        border-bottom: none;
+        margin-bottom: 30px;
+    }
+}
+
+.socialMidia{
+    a:hover{
+        color: $lightDarkColor;
+        border-bottom: none;
+    }
+}
+
+
+// =========Footer============
+
+footer{
+    height: 80px;
+    text-align: center;
+    background-color: $darkColor;
+    color: $lightLightColor;
+    padding-top: 1%;
 }
 
