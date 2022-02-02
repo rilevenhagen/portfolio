@@ -18,8 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Open+Sans+Condensed:ital,wght@1,300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Serif+4:wght@200&display=swap"
         rel="stylesheet">
     <!--=========================================font family ends here===========================-->
 
@@ -29,13 +28,14 @@
 <body>
     <!-- header start here, my logo and the nav bar will be here-->
     <header>
-        <div class="wrapper">
+        <div>
             <div>
                 <nav class="wrapper">
                     <ul>
                         <li><a class="aNav" href="#about">About me</a></li>
-                        <li><a class="aNav" href="#project">Project</a></li>
+                        <li><a class="aNav" href="#projects">Project</a></li>
                         <li><a class="aNav" href="#contact">Contact</a></li>
+                        <li><a class="aNav" href="resume.html" target="_blank">Resume</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,7 +51,7 @@
     <!--=======================================Main starts here===========================-->
     <main>
         <div id="skills" class="wrapper skill">
-            <h2>Skiils</h2>
+            <h2 class="h2Sill">Skiils</h2>
             <div class="imgSkills">
                 <img class="imgSkill" src="./assets/html.png" alt="HTML tag of logo">
                 <img class="imgSkill" src="./assets/css.png" alt="brand logo image of css">
@@ -66,31 +66,114 @@
 
         </div>
 
-        <div class="wrapper project">
-            <h2>Projects</h2>
-        </div>
 
-        <div class="wrapper aboutMe">
-            <h2>About me</h2>
 
-            <div class="aboutMeCont2">
-                <div>
-                    <img class="portrait" src="./assets/portrait2.jpg" alt="a portrait of ricardo levenhagen">
-                </div>
 
-                <p class="pAboutMe">I'm a Front End Web Developer, who loves what I do, with a strong foundation in
-                    production management, leadership and
-                    with excellent customer service. My education and professional background equip me with the skills
-                    and
-                    knowledge in
-                    order to be able to serve customers in the best possible way and make the teamwork a more organized
-                    and
-                    smooth way.</p>
+
+        <!-- =================project section============== -->
+        <div class="portfolioCont">
+            <div id="projects" class="wrapper project">
+                <h2 class="h2Prot">Projects</h2>
+                <p>Some of the stuff I did in my Bootcamp</p>
             </div>
 
+            <div class="wrapper potImgTxt">
+                <div class="portImgTxtCont">
+                    <img class="imgPortifolio" src="./assets/willow.png"
+                        alt="image of the first project made in the bootcamp ">
 
+                    <p>The first project made in the Bootcamp of a site simulating the client's briefing to build a site
+                        with 3 pages, a home
+                        page, a blog page and a contact page. The tools used in this project were: HTML, Css and Github.
+                    </p>
+                    <div class=" btnProj" >
+                        <a class="btn" href="https://ricardolevenhagen.com" target="_blank">Live site</a> <a
+                            class="btn btnProj" href="https://github.com/rilevenhagen/ricardo-ferreira-projet-one"
+                            target="_blank">GitHub</a>
+                    </div>
+
+
+                </div>
+                <div class="portImgTxtCont">
+                    <img class="imgPortifolio" src="./assets/newsSearch.png" alt="">
+
+                    <p>A work done in pairs on Bootcamp, with the briefing simulated the client's request to make me a
+                        website where we would have a search
+                        bar at the top so that the user could search for news, in the center the COVID numbers in Canada
+                        and at the bottom
+                        various news. The tools used in this project were: HTML, Sass, JavaScript, Github and API.</p>
+
+                    <div class=" btnProj" >
+                        <a class="btn" href="https://frosty-joliot-e87a70.netlify.app" target="_blank">Live
+                            site</a> <a class="btn btnProj" href="https://github.com/News-application/News-application"
+                            target="_blank">GitHub</a>
+                    </div>
+
+
+
+                </div>
+                <div class="portImgTxtCont">
+                    <img class="imgPortifolio" src="./assets/cryptocurrency.png" alt="">
+                    <p>A work done on Bootcamp, with the briefing simulated the client's request to make me a website
+                        where the user could search for cryptocurrency, before the bust to have some headlines with
+                        image about crypto world and some extra news. The tools used in this project were: HTML, React,
+                        Github and API.</p>
+                    <div class=" btnProj" >
+                        <a class="btn" href="https://cryptocurrencysearch.netlify.app" target="_blank">Live
+                            site</a> <a class="btn btnProj"
+                            href="https://github.com/rilevenhagen/ricardo-ferreira-cryptocurrency-search-project-three"
+                            target="_blank">GitHub</a>
+                    </div>
+
+
+                </div>
+                <div class="portImgTxtCont">
+                    <img class="imgPortifolio" src="./assets/bigeFest.png" alt="">
+                    <p>Work done during Bootcamp as a team, where the briefing simulated a client's request to set up a
+                        site that provide a show to binge watch and a place to get takeout from, according to the
+                        location and what the user is looking for. The tools used in this project were: HTML, Css,
+                        React, API and firebase.</p>
+                    <div class=" btnProj" >
+                        <a class="btn" href="https://bingefest.netlify.app/" target="_blank">Live site</a> <a
+                            class="btn btnProj" href="https://github.com/BingeFest/bingeFest" target="_blank">GitHub</a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
         </div>
 
+
+        <!-- ================abaout===================== -->
+
+        <div class="aboutCont">
+
+            <div id="about" class="wrapper aboutMe">
+                <h2 class="h2About">About me</h2>
+                <div class="aboutMeCont2">
+                    <div class="aboutMeCont3">
+                        <div>
+                            <img class="portrait" src="./assets/portrait2.jpg" alt="a portrait of ricardo levenhagen">
+                        </div>
+                        <div>
+
+                        </div>
+                        <p class="pAboutMe">I'm a Front End Web Developer, who loves what I do, with a strong foundation
+                            in
+                            production management, leadership and
+                            with excellent customer service. I love taking my road bike and going out and enjoying the
+                            freedom of
+                            pedaling, camping with the family and walking
+                            around with my camera hanging around my neck..</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
 
     </main>
@@ -101,35 +184,17 @@
     <!--====================================section before footer start here==================-->
 
     <section>
-        <div class="wrapper">
-            <h2>Ainda vou ver o que vou escrever qui</h2>
-            <h3>midias sociais</h3>
-        </div>
-        <div class="wrapper socialMidia">
-            <div>
-                <p>colocara as midias sociasis</p>
+        <div id="contact" class="wrapper">
+            <div class="contact-me">
+                <h2>Get In Touch</h2>
+                <a class="btn" href="mailto:rlevenhagen@gmail.com">CONTACT ME</a>
             </div>
-
-            <div class="midiaContainer">
-
-                <a href="https://www.linkedin.com/in/ricardo-levenhagen-54731a6a/" target="_blank"><i
-                        class="fab fa-linkedin" aria-hidden="true"> <span class="sr-only">Linkedin</span></i></a>
-
-                <a href="https://github.com/rilevenhagen" target="_blank"><i class="fab fa-github-square"
-                        aria-hidden="true"><span class="sr-only">Github</span></i></a>
-
-                <a href="https://twitter.com/Levenhagen" target="_blank"><i class="fab fa-twitter-square"
-                        aria-hidden="true"><span class="sr-only">Twitter</span></i></a>
-
-                <a href="https://www.instagram.com/levenhagen/" target="_blank"><i class="fab fa-instagram-square"
-                        aria-hidden="true"><span class="sr-only">Instagram</span></i></a>
-
-                <a href="https://medium.com/@Levenhagen" target="_blank"><i class="fab fa-medium"
-                        aria-hidden="true"><span class="sr-only">Medium</span></i></a>
-            </div>
-
-
         </div>
+
+
+
+
+
     </section>
 
     <!--====================================section before footer ends here==================-->
@@ -137,10 +202,36 @@
     <!--==================================== footer start here==============================-->
 
     <footer>
-        <div class="wrapper footerCont">
-            <p>Build and Designed by Ricardo Levenhagen 2022</p>
+
+        <div class="footerSocialMidia">
+
+            <div class="wrapper footerCont">
+                <p class="pFooter">Build and Designed by Ricardo Levenhagen 2022</p>
+            </div>
+            <!-- ===================social =============== -->
+
+            <div class="wrapper socialMidia">
+                <div class="midiaContainer">
+
+                    <a href="https://www.linkedin.com/in/ricardo-levenhagen-54731a6a/" target="_blank"><i
+                            class="fab fa-linkedin" aria-hidden="true"> <span class="sr-only">Linkedin</span></i></a>
+
+                    <a href="https://github.com/rilevenhagen" target="_blank"><i class="fab fa-github-square"
+                            aria-hidden="true"><span class="sr-only">Github</span></i></a>
+
+                    <a href="https://twitter.com/Levenhagen" target="_blank"><i class="fab fa-twitter-square"
+                            aria-hidden="true"><span class="sr-only">Twitter</span></i></a>
+
+                    <a href="https://www.instagram.com/levenhagen/" target="_blank"><i class="fab fa-instagram-square"
+                            aria-hidden="true"><span class="sr-only">Instagram</span></i></a>
+
+                    <a href="https://medium.com/@Levenhagen" target="_blank"><i class="fab fa-medium"
+                            aria-hidden="true"><span class="sr-only">Medium</span></i></a>
+                </div>
+            </div>
 
         </div>
+
     </footer>
 
     <!--==================================== footer ends here===========================-->

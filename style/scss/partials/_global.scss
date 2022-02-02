@@ -11,9 +11,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 // =================================after the snypot some of may glogal
 
-body {
-    background-color: $darkColor;
-}
+
 
 html {
     margin: 0;
@@ -33,12 +31,14 @@ html {
 //==========herol image=======
 
 header {
-    background-image: url(../assets/herol2.jpg);
+    background-image: url(../assets/hero3.jpg);
     margin: 0 auto;
-    height: 1100px;
+    height: 100vh;
     width: 100%;
     background-attachment: fixed;
-    background-position: center -900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center -900px;
 }
 
 
@@ -49,6 +49,7 @@ header {
     flex-wrap: wrap;
     width: 90%;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .imgSkill{
@@ -60,65 +61,129 @@ margin: 30px 70px;
 
 .skill{
     text-align: center;
-    font-family: $fontFamily1;
+    font-family: $fontFamily2;
     font-size: 4rem;
     margin-bottom: 5rem;
 }
 
 
-h2{
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
 
 // =====================ptoject==========
 
-.project{
-    text-align: center;
-    font-family: $fontFamily1;
-    font-size: 4rem;
-    margin-bottom: 5rem;
+.portfolioCont{
+background-color: $lightLightColor;
+width: 90%;
+margin: 0 auto;
 }
 
+.potImgTxt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.portImgTxtCont{
+    width: calc(50% - 1rem);
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.h2Prot{
+    margin-top: 15px;
+}
+
+.project{
+    text-align: left;
+    font-family: $fontFamily2;
+    font-size: 2rem;
+    width:100%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    p{
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+}
+
+.imgPortifolio{
+    width: 100%;
+    box-shadow: 6px 7px #1d1d1d;
+}
 
 h2{
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.btnProj{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 // =====================ABOUT ME==========
 
+.aboutCont{
+    background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 .aboutMe{
     text-align: center;
-    font-family: $fontFamily1;
-    font-size: 4rem;
-    margin-bottom: 5rem;
-
+    font-family: $fontFamily2;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 150px;
 }
 
 .aboutMeCont2{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        align-items: center;
-            width: (100% / 2 );
+}
+
+.aboutMeCont3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+.h2About{
+    color: $lightgrayColor;
+    text-align: left;
 }
 
 .pAboutMe{
     font-size: 1.5rem;
+    color: $lightgrayColor;
     font-family: $fontFamily1;
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-bottom: 1.5rem;
     letter-spacing: 0.4rem;
     line-height: 2.5rem;
+    width: 100%;
 }
 
 
 .portrait {
-    width: 100%;
-    border:2px solid rgb(0, 0, 0);
+    width: 90%;
+    border:2px solid $lightLightColor;
     border-radius: 100%;
 }
 
@@ -137,10 +202,9 @@ h2{
 .socialMidia{
     a{
         margin:10px 15px;
-        color: $darkLightColor;
+        color: $darkColor;
         font-size: 2rem;
         border-bottom: none;
-        margin-bottom: 30px;
     }
 }
 
@@ -151,14 +215,58 @@ h2{
     }
 }
 
+// =========contaact=========
+
+.contact-me {
+    text-align: center;
+    margin: 40px 5px
+}
+
+.btn{
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: $black;
+    border-radius: 12px;
+    border: 2px solid $black;
+    padding: 9px;
+    padding-top: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover, .btn:focus {
+    background-color:  $black;
+    color:  $lightLightColor;
+}
 
 // =========Footer============
+
+.aboutCont{
+        background-image: url(../assets/Caraguatatuba---20140201--229.jpg);
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.footerSocialMidia{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-top: 0.01rem dotted $darkColor;
+}
 
 footer{
     height: 80px;
     text-align: center;
-    background-color: $darkColor;
-    color: $lightLightColor;
+    color: $black;
     padding-top: 1%;
 }
 
