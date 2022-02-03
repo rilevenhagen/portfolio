@@ -29,21 +29,53 @@
     <!-- header start here, my logo and the nav bar will be here-->
     <header>
         <div>
-            <div>
-                <nav class="wrapper">
-                    <ul>
+            <div class="navCont">
+                <nav class="wrapper navCont2">
+                    <div class="humburgerBtCont">
+                        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <ul id="navUl" class="navUl">
                         <li><a class="aNav" href="#about">About me</a></li>
+                        <li><a class="aNav" href="#skills">Skills</a></li>
                         <li><a class="aNav" href="#projects">Project</a></li>
                         <li><a class="aNav" href="#contact">Contact</a></li>
-                        <li><a class="aNav" href="resume.html" target="_blank">Resume</a></li>
+                        <li><a class="aNav" href="resume.html">Resume</a></li>
                     </ul>
                 </nav>
             </div>
-            <div id="nameLogo" class="myName introText">
+            <div id="nameLogo" class="myName">
                 <h1>Ricardo Levenhagen</h1>
                 <p class="pMyName">Front-End Web Developer</p>
             </div>
+            <dic class="box">
+                <a class="aNav" href="#skills">
+                <span class="arrows"></span>
+                <span class="arrows"></span>
+                <span class="arrows"></span>
+                </a>
+            </dic>
         </div>
+        <!--================= Animations starts here============ -->
+
+        <section>
+            <div class="intro">
+
+                <div class="introText">
+
+                    <h1 class="hide">
+                        <span class="text">Ricardo Levenhagen</span>
+                    </h1>
+
+                    <h2 class="hide">
+                        <span class="text text2">Front-End Web Developer</span>
+                    </h2>
+
+                </div>
+
+            </div>
+            <div class="slider"></div>
+        </section>
+        <!--================= Animations ends here============ -->
 
     </header>
     <!--====================================the header end here===========================-->
@@ -86,7 +118,7 @@
                         with 3 pages, a home
                         page, a blog page and a contact page. The tools used in this project were: HTML, Css and Github.
                     </p>
-                    <div class=" btnProj" >
+                    <div class=" btnProj">
                         <a class="btn" href="https://ricardolevenhagen.com" target="_blank">Live site</a> <a
                             class="btn btnProj" href="https://github.com/rilevenhagen/ricardo-ferreira-projet-one"
                             target="_blank">GitHub</a>
@@ -103,7 +135,7 @@
                         and at the bottom
                         various news. The tools used in this project were: HTML, Sass, JavaScript, Github and API.</p>
 
-                    <div class=" btnProj" >
+                    <div class=" btnProj">
                         <a class="btn" href="https://frosty-joliot-e87a70.netlify.app" target="_blank">Live
                             site</a> <a class="btn btnProj" href="https://github.com/News-application/News-application"
                             target="_blank">GitHub</a>
@@ -118,7 +150,7 @@
                         where the user could search for cryptocurrency, before the bust to have some headlines with
                         image about crypto world and some extra news. The tools used in this project were: HTML, React,
                         Github and API.</p>
-                    <div class=" btnProj" >
+                    <div class=" btnProj">
                         <a class="btn" href="https://cryptocurrencysearch.netlify.app" target="_blank">Live
                             site</a> <a class="btn btnProj"
                             href="https://github.com/rilevenhagen/ricardo-ferreira-cryptocurrency-search-project-three"
@@ -133,14 +165,12 @@
                         site that provide a show to binge watch and a place to get takeout from, according to the
                         location and what the user is looking for. The tools used in this project were: HTML, Css,
                         React, API and firebase.</p>
-                    <div class=" btnProj" >
+                    <div class=" btnProj">
                         <a class="btn" href="https://bingefest.netlify.app/" target="_blank">Live site</a> <a
                             class="btn btnProj" href="https://github.com/BingeFest/bingeFest" target="_blank">GitHub</a>
                     </div>
 
                 </div>
-
-
 
             </div>
         </div>
@@ -191,13 +221,10 @@
             </div>
         </div>
 
-
-
-
-
     </section>
 
     <!--====================================section before footer ends here==================-->
+
 
     <!--==================================== footer start here==============================-->
 
@@ -236,6 +263,9 @@
 
     <!--==================================== footer ends here===========================-->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
 
     <script src="./app.js"></script>
 </body>

@@ -1,0 +1,26 @@
+
+const animationApp = {}
+
+// hamburger menu ==========>
+
+animationApp.hamburger = document.getElementById('hamburger')
+
+animationApp.navUL = document.getElementById('navUl')
+
+// animation for the page ========>
+animationApp.init = () => {
+
+    animationApp.hamburger.addEventListener('click', () => {
+        animationApp.navUL.classList.toggle('show');
+        console.log("it's working")
+    });
+
+    animationApp.timeL = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+    animationApp.timeL.to('.text', { y: '0%', duration: 1.4 });
+    animationApp.timeL.to('.intro', { y: '-100%', duration: 1.3, delay: 1.3 });
+
+}
+
+
+animationApp.init();
