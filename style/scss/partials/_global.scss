@@ -162,13 +162,14 @@ h2{
 }
 
 .h2About{
-    color: $lightgrayColor;
+    color: $darkColor;
     text-align: left;
+    -webkit-text-stroke: 1.5px $black;
 }
 
 .pAboutMe{
     font-size: 1.5rem;
-    color: $lightgrayColor;
+    color: $darkColor;
     font-family: $fontFamily1;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -176,6 +177,7 @@ h2{
     letter-spacing: 0.4rem;
     line-height: 2.5rem;
     width: 100%;
+    -webkit-text-stroke: 1.5px $black;
 }
 
 
@@ -264,3 +266,42 @@ footer{
 }
 
 
+
+// ======================404 error=============
+
+.error404{
+    background-image: url(../assets/festival-de-circo-2---20130724--115.jpg);
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-right: 150px;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.errorPage{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    color: $lightgrayColor;
+        i{
+            color: $lightgrayColor ;
+        }
+}
+
+.errorPage{
+    i:hover{
+        color: $lightDarkColor;
+    }
+}
+
+.h1Error{
+margin-top: 30%;
+margin-left: 25%;
+font-size: 3rem;
+}
