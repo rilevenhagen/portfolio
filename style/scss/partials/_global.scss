@@ -182,9 +182,11 @@ h2{
 
 
 .portrait {
-    width: 90%;
-    border:2px solid $lightLightColor;
+    width: 95%;
+    border:2px solid $black;
     border-radius: 100%;
+    background-color:$lightLightColor;
+    padding:3px;
 }
 
 // =====================social midia==========
