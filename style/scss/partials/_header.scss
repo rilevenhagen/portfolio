@@ -36,8 +36,15 @@ ul {
 }
 
 .myName{
-    margin-top: 16%;
-    margin-left: 25%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 50vh;
+    padding-top: 140px;
+    margin-top: 50px;
 }
 
 h1{
@@ -56,4 +63,139 @@ h1{
     margin-top: 0;
 }
 
+// =========Arrow animation start here
+.box{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.box{
+    .arrows{
+        display: block;
+        width: 26px;
+        height: 26px;
+        border-bottom:1px solid white ;
+        border-right:1px solid white ;
+        animation: animate 2s infinite;
+        margin: -10px;
+        transform: rotate(45deg);
+    }
+}
+
+.box .arrows:nth-child(1){
+    animation-delay: -0.2s;
+}
+.box .arrows:nth-child(2){
+    animation-delay: -0.4s;
+}
+.box .arrows:nth-child(3){
+    animation-delay: -0.6s;
+}
+
+@keyframes animate {
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+.arrows:hover{
+        border-bottom:1px solid $FooterlightLightColor ;
+        border-right:1px solid $FooterlightLightColor ;
+        transform:rotate(45deg) scale(7rem);
+
+}
+
+// =========Arrow animation end here============
+
+// =================hamburger menu============
+
+
+.navCont2{ 
+    position: relative;
+}
+
+.hamburger{
+    background-color: transparent;
+    display: none;
+    border: 0;
+    color:  $lightLightColor;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top:1.4rem ;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+
+
+// ================== animation starts here======
+
+
+.intro{
+    background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: fixed;
+    padding-bottom: 150px;
+    padding-right: 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    background-repeat: no-repeat;
+}
+
+.text{
+    font-family: $fontFamily1;
+    color: white;
+    letter-spacing: 7px;
+    font-size: 3rem;
+}
+
+.text2{
+    font-family: $fontFamily1;
+    color: white;
+    letter-spacing: 7px;
+    font-size: 1.5rem; 
+}
+
+.slider{
+background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hide{
+    overflow: hidden;
+}
+
+.hide{
+    span{
+        transform: translateY(100%);
+        display: inline-block;
+    }
+}
+
+// ================== animation ends here======

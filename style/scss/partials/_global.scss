@@ -31,14 +31,13 @@ html {
 //==========herol image=======
 
 header {
-    background-image: url(../assets/hero3.jpg);
+    background-image: url(../assets/hero.jpg);
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    // background-position: center -900px;
 }
 
 
@@ -126,15 +125,14 @@ h2{
 // =====================ABOUT ME==========
 
 .aboutCont{
-    background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+    background-image: url(../assets/Caraguatatuba---20140201--229.jpg);
     margin: 0 auto;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 
 .aboutMe{
@@ -242,15 +240,6 @@ h2{
 
 // =========Footer============
 
-.aboutCont{
-        background-image: url(../assets/Caraguatatuba---20140201--229.jpg);
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 .footerSocialMidia{
@@ -269,4 +258,9 @@ footer{
     color: $black;
     padding-top: 1%;
 }
+
+.getInTfooter{
+    color: $lightLightColor;
+}
+
 

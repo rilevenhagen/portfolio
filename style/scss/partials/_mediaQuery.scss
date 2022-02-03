@@ -7,9 +7,6 @@
         font-size: 2.7rem;
     }
 
-    .myName {
-    margin-left: 17%;
-}
 
 .pMyName {
     font-size: 1.5rem;
@@ -113,9 +110,10 @@ width: 45%;
 }
 
 .btnProj {
-  margin-left: 2%;
-  margin-right: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
+
 
 }
 
@@ -140,9 +138,6 @@ ul {
         }
     }
 
-.myName {
-    margin-top: 34%;
-}
 
 .imgSkill {
     width: 14%;
@@ -178,12 +173,39 @@ ul {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 709px) {
 
 .wrapper {
     max-width: 610px;
     width: 90%;
 }
+
+// hamburger menu =============
+
+
+.navUl{
+    display: none;
+    flex-direction: column;
+    width: auto;
+    padding: 0.6rem;
+    margin-top: 1.8rem;
+    line-height: 1.6rem;
+    position: absolute;
+    background-color: $darkLNavColor;
+    left: 34px;
+    top: -5px;
+}
+
+
+.navUl.show{
+    display: flex;
+}
+
+.hamburger{
+    display: block;
+}
+
+// hamburger menu ends here =============
 
 .imgSkill {
 width: 18%;
@@ -205,6 +227,56 @@ width: 25%;
 .pAboutMe {
     font-size: 0.7rem;
     letter-spacing: 0.2rem;
+}
+// ====animation
+
+.text{
+    font-family: $fontFamily1;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    }
+
+.text2{
+    font-family: $fontFamily1;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+}
+
+
+@media (max-width: 440px) {
+
+.wrapper {
+    max-width: 440px;
+    width: 95%;
+}
+
+
+h1 {
+    font-size: 2.3rem;
+}
+
+.pMyName {
+    font-size: 1.2rem;
+}
+
+}
+
+@media (max-width: 355px) {
+.wrapper {
+    max-width: 355px;
+    width: 95%;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.pMyName{
+    font-size: 1rem;
 }
 
 }
