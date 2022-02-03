@@ -489,6 +489,25 @@ footer {
   font-size: 3rem;
 }
 
+ul li .nav404 {
+  text-decoration: none;
+  font-family: "Source Serif 4", sans-serif;
+  color: #EDEDED;
+  letter-spacing: 0.2rem;
+  font-size: 1.3rem;
+  transition: 0.4s ease-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: 1rem;
+}
+
+ul li .nav404:hover, ul li .nav404:focus {
+  color: #68868C;
+  border-bottom: 1px solid #68868C;
+  transform: scale(20) skew(-20deg);
+}
+
 nav {
   display: flex;
   flex-direction: row;
