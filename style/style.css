@@ -365,13 +365,14 @@ h2 {
 }
 
 .h2About {
-  color: #efefef;
+  color: #1d1d1d;
   text-align: left;
+  -webkit-text-stroke: 1.5px black;
 }
 
 .pAboutMe {
   font-size: 1.5rem;
-  color: #efefef;
+  color: #1d1d1d;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -379,6 +380,7 @@ h2 {
   letter-spacing: 0.4rem;
   line-height: 2.5rem;
   width: 100%;
+  -webkit-text-stroke: 1.5px black;
 }
 
 .portrait {
@@ -450,6 +452,41 @@ footer {
 
 .getInTfooter {
   color: #EDEDED;
+}
+
+.error404 {
+  background-image: url(../assets/festival-de-circo-2---20130724--115.jpg);
+  background-size: cover;
+  padding-bottom: 150px;
+  padding-right: 150px;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.errorPage {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  color: #efefef;
+}
+.errorPage i {
+  color: #efefef;
+}
+
+.errorPage i:hover {
+  color: #68868C;
+}
+
+.h1Error {
+  margin-top: 30%;
+  margin-left: 25%;
+  font-size: 3rem;
 }
 
 nav {
@@ -732,6 +769,11 @@ form {
   .pMyName {
     font-size: 1.5rem;
   }
+
+  .h1Error {
+    margin-top: 25%;
+    font-size: 2rem;
+  }
 }
 @media (max-width: 950px) {
   .wrapper {
@@ -802,6 +844,11 @@ form {
 
   .portrait {
     width: 45%;
+  }
+
+  .h1Error {
+    margin-top: 25%;
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 835px) {
@@ -935,6 +982,11 @@ form {
 
   .pMyName {
     font-size: 1.2rem;
+  }
+
+  .h1Error {
+    margin-top: 25%;
+    font-size: 1rem;
   }
 }
 @media (max-width: 355px) {
