@@ -245,9 +245,9 @@ html {
 }
 
 header {
-  background-image: url(../assets/hero3.jpg);
+  background-image: url(../assets/hero.jpg);
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -329,9 +329,9 @@ h2 {
 }
 
 .aboutCont {
-  background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+  background-image: url(../assets/Caraguatatuba---20140201--229.jpg);
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -431,16 +431,6 @@ h2 {
   color: #EDEDED;
 }
 
-.aboutCont {
-  background-image: url(../assets/Caraguatatuba---20140201--229.jpg);
-  margin: 0 auto;
-  height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .footerSocialMidia {
   margin: 0 auto;
   width: 90%;
@@ -456,6 +446,10 @@ footer {
   text-align: center;
   color: black;
   padding-top: 1%;
+}
+
+.getInTfooter {
+  color: #EDEDED;
 }
 
 nav {
@@ -493,8 +487,15 @@ ul li .aNav {
 }
 
 .myName {
-  margin-top: 16%;
-  margin-left: 25%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding-top: 140px;
+  margin-top: 50px;
 }
 
 h1 {
@@ -513,8 +514,150 @@ h1 {
   margin-top: 0;
 }
 
+.box {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box .arrows {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  -webkit-animation: animate 2s infinite;
+          animation: animate 2s infinite;
+  margin: -10px;
+  transform: rotate(45deg);
+}
+
+.box .arrows:nth-child(1) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.box .arrows:nth-child(2) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+.box .arrows:nth-child(3) {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.arrows:hover {
+  border-bottom: 1px solid #aaa9a9;
+  border-right: 1px solid #aaa9a9;
+  transform: rotate(45deg) scale(7rem);
+}
+
+.navCont2 {
+  position: relative;
+}
+
+.hamburger {
+  background-color: transparent;
+  display: none;
+  border: 0;
+  color: #EDEDED;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1.4rem;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.intro {
+  background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: fixed;
+  padding-bottom: 150px;
+  padding-right: 150px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  background-repeat: no-repeat;
+}
+
+.text {
+  font-family: "Lato", sans-serif;
+  color: white;
+  letter-spacing: 7px;
+  font-size: 3rem;
+}
+
+.text2 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  letter-spacing: 7px;
+  font-size: 1.5rem;
+}
+
+.slider {
+  background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+  background-size: cover;
+  background-position: bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.hide {
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.headerResume {
+  background-image: none;
+  background-attachment: none;
+  background-repeat: none;
+  background-size: none;
+  min-height: 4vh;
+  width: 100%;
+}
+
 .resBody {
-  background-color: #1d1d1d;
+  background-color: #aaa9a9;
 }
 
 .resCont {
@@ -522,17 +665,68 @@ h1 {
 }
 
 .resume {
-  padding: 3rem;
   width: 100%;
+  margin-top: 60px;
+}
+
+.contactMainSection {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: white;
+}
+
+.continer1, .continer2 {
+  width: 50%;
+}
+
+.formContiner {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.submit {
+  max-width: 1280px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: end;
+  margin-right: 128px;
+}
+
+form {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding: 32px;
+}
+
+.formContiner label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.7rem;
+  font-family: "Source Serif 4", sans-serif;
+}
+
+.formElement {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 500px;
 }
 
 @media (max-width: 990px) {
   h1 {
     font-size: 2.7rem;
-  }
-
-  .myName {
-    margin-left: 17%;
   }
 
   .pMyName {
@@ -635,10 +829,6 @@ h1 {
     font-size: 0.8rem;
   }
 
-  .myName {
-    margin-top: 34%;
-  }
-
   .imgSkill {
     width: 14%;
     margin: 20px 40px;
@@ -670,10 +860,31 @@ h1 {
     margin: 22px 13px 0 13px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 709px) {
   .wrapper {
     max-width: 610px;
     width: 90%;
+  }
+
+  .navUl {
+    display: none;
+    flex-direction: column;
+    width: auto;
+    padding: 0.6rem;
+    margin-top: 1.8rem;
+    line-height: 1.6rem;
+    position: absolute;
+    background-color: rgba(28, 28, 28, 0.2);
+    left: 34px;
+    top: -5px;
+  }
+
+  .navUl.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .imgSkill {
@@ -696,5 +907,47 @@ h1 {
   .pAboutMe {
     font-size: 0.7rem;
     letter-spacing: 0.2rem;
+  }
+
+  .text {
+    font-family: "Lato", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+  }
+
+  .text2 {
+    font-family: "Lato", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 440px) {
+  .wrapper {
+    max-width: 440px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .pMyName {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 355px) {
+  .wrapper {
+    max-width: 355px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .pMyName {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
