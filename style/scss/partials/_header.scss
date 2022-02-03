@@ -1,7 +1,4 @@
-a{
-    text-decoration: none;
-    font-style: normal;
-}
+
 
 nav{
     display: flex;
@@ -12,22 +9,27 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 55%;
+    width: 100%;
+    padding: 0;
         li {
             list-style: none;
-            a{
+            .aNav{
             text-decoration: none;
-            font-family: $fontFamily1;
-            font-weight: bold;
+            font-family: $fontFamily2;
+            // font-weight: bold;
             color: $colorwite;
             letter-spacing: 0.2rem;
-            font-size: 1.6rem; 
-            transition: 0.4s ease-out;               
+            font-size: 1.3rem; 
+            transition: 0.4s ease-out;
+            text-transform: uppercase; 
+            text-decoration: none;
+            font-style: normal;   
+            margin-left: 1rem;     
             }
+        }
     }
-}
 
-a:hover,a:focus {
+.aNav:hover,.aNav:focus {
     color:$black;
     border-bottom: 1px solid $black;
     transform: scale(20) skew(-20deg);
@@ -39,7 +41,7 @@ a:hover,a:focus {
 }
 
 h1{
-    font-family: $fontFamily2;
+    font-family: $fontFamily1;
     color: white;
     letter-spacing: 7px;
     font-size: 3rem;
@@ -50,7 +52,7 @@ h1{
     font-family: $fontFamily1;
     color: white;
     letter-spacing: 7px;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     margin-top: 0;
 }
 
