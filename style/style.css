@@ -230,10 +230,6 @@ html {
   overflow: hidden;
 }
 
-body {
-  background-color: #2020209c;
-}
-
 html {
   margin: 0;
   padding: 0;
@@ -249,12 +245,13 @@ html {
 }
 
 header {
-  background-image: url(../assets/herol2.jpg);
+  background-image: url(../assets/hero3.jpg);
   margin: 0 auto;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   background-attachment: fixed;
-  background-position: center -900px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .imgSkills {
@@ -262,16 +259,203 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-img {
-  width: 120px;
+.imgSkill {
+  width: 15%;
   margin: 30px 70px;
 }
 
-a {
+.skill {
+  text-align: center;
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.portfolioCont {
+  background-color: #EDEDED;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.potImgTxt {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.portImgTxtCont {
+  width: calc(50% - 1rem);
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.h2Prot {
+  margin-top: 15px;
+}
+
+.project {
+  text-align: left;
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.project p {
+  font-size: 1.3rem;
+  margin-top: 5px;
+}
+
+.imgPortifolio {
+  width: 100%;
+  box-shadow: 6px 7px #1d1d1d;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.btnProj {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.aboutCont {
+  background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutMe {
+  text-align: center;
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.aboutMeCont2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMeCont3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
+
+.h2About {
+  color: #efefef;
+  text-align: left;
+}
+
+.pAboutMe {
+  font-size: 1.5rem;
+  color: #efefef;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.4rem;
+  line-height: 2.5rem;
+  width: 100%;
+}
+
+.portrait {
+  width: 90%;
+  border: 2px solid #EDEDED;
+  border-radius: 100%;
+}
+
+.midiaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.socialMidia a {
+  margin: 10px 15px;
+  color: #1d1d1d;
+  font-size: 2rem;
+  border-bottom: none;
+}
+
+.socialMidia a:hover {
+  color: #68868C;
+  border-bottom: none;
+}
+
+.contact-me {
+  text-align: center;
+  margin: 40px 5px;
+}
+
+.btn {
+  font-size: 1rem;
   text-decoration: none;
-  font-style: normal;
+  background-color: transparent;
+  color: black;
+  border-radius: 12px;
+  border: 2px solid black;
+  padding: 9px;
+  padding-top: 12px;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn:hover, .btn:focus {
+  background-color: black;
+  color: #EDEDED;
+}
+
+.aboutCont {
+  background-image: url(../assets/Caraguatatuba---20140201--229.jpg);
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footerSocialMidia {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-top: 0.01rem dotted #1d1d1d;
+}
+
+footer {
+  height: 80px;
+  text-align: center;
+  color: black;
+  padding-top: 1%;
 }
 
 nav {
@@ -283,22 +467,26 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 55%;
+  width: 100%;
+  padding: 0;
 }
 ul li {
   list-style: none;
 }
-ul li a {
+ul li .aNav {
   text-decoration: none;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: bold;
+  font-family: "Source Serif 4", sans-serif;
   color: #ffffff;
   letter-spacing: 0.2rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   transition: 0.4s ease-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: 1rem;
 }
 
-a:hover, a:focus {
+.aNav:hover, .aNav:focus {
   color: black;
   border-bottom: 1px solid black;
   transform: scale(20) skew(-20deg);
@@ -310,7 +498,7 @@ a:hover, a:focus {
 }
 
 h1 {
-  font-family: "Sedgwick Ave", cursive;
+  font-family: "Lato", sans-serif;
   color: white;
   letter-spacing: 7px;
   font-size: 3rem;
@@ -318,9 +506,195 @@ h1 {
 }
 
 .pMyName {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Lato", sans-serif;
   color: white;
   letter-spacing: 7px;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   margin-top: 0;
+}
+
+.resBody {
+  background-color: #1d1d1d;
+}
+
+.resCont {
+  margin: 0 auto;
+}
+
+.resume {
+  padding: 3rem;
+  width: 100%;
+}
+
+@media (max-width: 990px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .myName {
+    margin-left: 17%;
+  }
+
+  .pMyName {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 950px) {
+  .wrapper {
+    max-width: 950px;
+    width: 90%;
+  }
+
+  ul li .aNav {
+    font-size: 1rem;
+  }
+
+  .skill {
+    font-size: 3rem;
+  }
+
+  .imgSkills {
+    width: 100%;
+  }
+
+  .pAboutMe {
+    font-size: 1.2rem;
+  }
+
+  .portrait {
+    width: 77%;
+  }
+
+  .aboutCont {
+    margin-top: 55px;
+  }
+
+  .pFooter {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 902px) {
+  .wrapper {
+    max-width: 902px;
+    width: 90%;
+  }
+
+  ul li .aNav {
+    font-size: 0.9rem;
+  }
+
+  .btnProj {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+@media (max-width: 875px) {
+  .wrapper {
+    max-width: 875px;
+    width: 90%;
+  }
+
+  .pAboutMe {
+    font-size: 1rem;
+  }
+
+  .aboutMeCont3 {
+    flex-direction: column;
+  }
+
+  .aboutCont {
+    background-position: center;
+  }
+
+  .portrait {
+    width: 45%;
+  }
+}
+@media (max-width: 835px) {
+  .wrapper {
+    max-width: 835px;
+    width: 90%;
+  }
+
+  .btnProj {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+@media (max-width: 835px) {
+  .wrapper {
+    max-width: 835px;
+    width: 90%;
+  }
+
+  .aboutCont {
+    height: 127vh;
+  }
+
+  ul li .aNav {
+    font-size: 0.8rem;
+  }
+
+  .myName {
+    margin-top: 34%;
+  }
+
+  .imgSkill {
+    width: 14%;
+    margin: 20px 40px;
+  }
+
+  .h2Prot, .h2Sill, .h2About {
+    margin-top: 20px;
+    font-size: 2.4rem;
+  }
+
+  .portImgTxtCont {
+    margin-top: 0.5rem;
+  }
+
+  .portrait {
+    width: 35%;
+  }
+
+  .pAboutMe {
+    font-size: 0.8rem;
+  }
+
+  .footerSocialMidia {
+    flex-direction: column-reverse;
+  }
+
+  .socialMidia a {
+    font-size: 1.5rem;
+    margin: 22px 13px 0 13px;
+  }
+}
+@media (max-width: 700px) {
+  .wrapper {
+    max-width: 610px;
+    width: 90%;
+  }
+
+  .imgSkill {
+    width: 18%;
+    margin: 10px 29px;
+  }
+
+  .portImgTxtCont {
+    width: 100%;
+  }
+
+  .potImgTxt {
+    flex-direction: column;
+  }
+
+  .portrait {
+    width: 25%;
+  }
+
+  .pAboutMe {
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
