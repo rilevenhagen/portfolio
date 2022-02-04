@@ -872,6 +872,10 @@ form {
     margin-top: 25%;
     font-size: 1.7rem;
   }
+
+  .intro {
+    padding-right: 1px;
+  }
 }
 @media (max-width: 835px) {
   .wrapper {
@@ -982,14 +986,14 @@ form {
     font-family: "Lato", sans-serif;
     color: white;
     letter-spacing: 1px;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
   }
 
   .text2 {
     font-family: "Lato", sans-serif;
     color: white;
     letter-spacing: 2px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 440px) {
@@ -1010,6 +1014,15 @@ form {
     margin-top: 25%;
     font-size: 1rem;
   }
+
+  header {
+    -o-object-fit: fill;
+       object-fit: fill;
+    min-height: 90vh;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+  }
 }
 @media (max-width: 355px) {
   .wrapper {
@@ -1023,5 +1036,14 @@ form {
 
   .pMyName {
     font-size: 1rem;
+  }
+
+  header {
+    -o-object-fit: fill;
+       object-fit: fill;
+    min-height: 90vh;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
