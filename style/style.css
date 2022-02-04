@@ -249,7 +249,7 @@ header {
   margin: 0 auto;
   min-height: 100vh;
   width: 100%;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1008,9 +1008,9 @@ form {
     margin-left: 0px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   .wrapper {
-    max-width: 440px;
+    max-width: 450px;
     width: 95%;
   }
 
@@ -1025,6 +1025,15 @@ form {
   .h1Error {
     margin-top: 25%;
     font-size: 1rem;
+  }
+
+  header {
+    background-attachment: scroll;
+  }
+
+  .error404 {
+    background-attachment: scroll;
+    background-repeat: repeat;
   }
 }
 @media (max-width: 355px) {
