@@ -249,8 +249,6 @@ header {
   margin: 0 auto;
   min-height: 100vh;
   width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -1027,8 +1025,19 @@ form {
     font-size: 1rem;
   }
 
-  header {
-    background-attachment: scroll;
+  header:after {
+    content: "";
+    position: fixed;
+    /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh;
+    /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* needed to keep in the background */
+    background: url(../assets/hero.jpg) center center;
+    background-size: cover;
   }
 
   .aboutCont {
