@@ -1036,7 +1036,6 @@ form {
     right: 0;
     z-index: -1;
     /* needed to keep in the background */
-    background: url(../assets/hero.jpg) center center;
     background-size: cover;
   }
 
