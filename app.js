@@ -15,10 +15,10 @@ animationApp.init = () => {
         console.log("it's working")
     });
 
-    animationApp.timeL = gsap.timeline({ defaults: { ease: "power1.out" } });
+    // animationApp.timeL = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-    animationApp.timeL.to('.text', { y: '0%', duration: 1.5 });
-    animationApp.timeL.to('.intro', { y: '-100%', duration: 1.5, delay: 1.5 });
+    // animationApp.timeL.to('.text', { y: '0%', duration: 1.5 });
+    // animationApp.timeL.to('.intro', { y: '-100%', duration: 1.5, delay: 1.5 });
 
 }
 
