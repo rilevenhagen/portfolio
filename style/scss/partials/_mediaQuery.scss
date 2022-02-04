@@ -285,13 +285,11 @@ h1 {
     font-size: 1rem;
 }
 header{
-    object-fit: fill;
-    min-height: 90vh;
-    background-position: center center;
-    position: relative;
-    overflow: hidden;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 }
-
 
 }
 
@@ -310,11 +308,10 @@ h1 {
 }
 
 header{
-    object-fit: fill;
-    min-height: 90vh;
-    background-position: center center;
-    position: relative;
-    overflow: hidden;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 }
 
 }
