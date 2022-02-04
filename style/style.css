@@ -553,7 +553,7 @@ ul li .aNav {
   align-content: center;
   justify-content: center;
   min-height: 50vh;
-  padding-top: 140px;
+  padding-top: 65px;
   margin-top: 50px;
 }
 
@@ -1008,9 +1008,9 @@ form {
     margin-left: 0px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   .wrapper {
-    max-width: 440px;
+    max-width: 450px;
     width: 95%;
   }
 
@@ -1025,6 +1025,24 @@ form {
   .h1Error {
     margin-top: 25%;
     font-size: 1rem;
+  }
+
+  header {
+    background-attachment: scroll;
+  }
+
+  .aboutCont {
+    min-height: 85vh;
+  }
+
+  .aboutCont {
+    background-attachment: scroll;
+  }
+
+  .error404 {
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-size: contain;
   }
 }
 @media (max-width: 355px) {
