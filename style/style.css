@@ -1031,6 +1031,14 @@ form {
     background-attachment: scroll;
   }
 
+  .aboutCont {
+    min-height: 85vh;
+  }
+
+  .aboutCont {
+    background-attachment: scroll;
+  }
+
   .error404 {
     background-attachment: scroll;
     background-repeat: repeat;
