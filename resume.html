@@ -107,29 +107,29 @@
 
                 <div class="status">
                 <php
-                if(isset($_POST['submit']))
+                if(isset($_POST[`submit`]))
                 {
-                        $User_name = $_POST['firstname'];
-                        $Subject = $_POST['subject'];
-                        $User_email = $_POST['email'];
-                        $User_message = $_POST['message'];
+                        $User_name = $_POST[`firstname`];
+                        $Subject = $_POST[`subject`];
+                        $User_email = $_POST[`email`];
+                        $User_message = $_POST[`message`];
 
                         $email_form = 'rlevenhagen@gmail.com';
                         $email_subject = 'New Form submission';
                         $email_body =   'Name: $User_name.\n';
-                                        'Name: $Subject.\n';
-                                        'Name: $User_email.\n';
-                                        'Name: $User_message.\n';
+                                        `Name: $Subject.\n`;
+                                        `Name: $User_email.\n`;
+                                        `Name: $User_message.\n`;
                         
                         $to_email = "rlevenhagen@gmail.com";
                         $headers = "form: $email_form \r\n";
                         $headers .= "Replay-To: $user_email\r\n"; 
 
 
-                        $secretKey = '6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a';
-                        $responseKey = $_POST['g=recaptcha-response'];
-                        $userIP = $SERVER['REOMTE_ADDR'];
-                        $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP;
+                        $secretKey = `6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a`;
+                        $responseKey = $_POST[`g-recaptcha-response`];
+                        $userIP = $SERVER[`REOMTE_ADDR`];
+                        $url = https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP;
 
 
                         $response = file_get_contents($url);
