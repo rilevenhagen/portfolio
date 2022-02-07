@@ -1,5 +1,6 @@
 
 const animationApp = {}
+// const reCaptchGoggle = {}
 
 // hamburger menu ==========>
 
@@ -20,5 +21,9 @@ animationApp.init = () => {
     animationApp.timeL.to('.intro', { y: '-100%', duration: 1.5, delay: 1.5 });
 
 }
+
+// reCaptchGoggle.successCallback () = () => {
+//     alert(grecaptcha.getResponse)
+// } 
 
 animationApp.init();
