@@ -7,9 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
 
+<!-- google recaptcha -->
+
+        <script>
+            function onLoadCallback() {
+                grecaptcha.render('divRecaptcha', {
+                    sitekey: "6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a",
+                    callback: successCallback,
+                });
+            }
+            </script>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+<!-- google recaptcha end here -->
 
     <!-- google -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -97,7 +107,7 @@
                     <button type="submit">Send</button>
                     <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a"></div>
+                <div id="divRecaptcha" class="g-recaptcha"></div>
 
             </form>
 
