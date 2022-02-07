@@ -10,15 +10,15 @@
 <!-- google recaptcha -->
 
         <script>
-            function onLoadCallback() {
+            function onloadCallback() {
                 grecaptcha.render('divRecaptcha', {
-                    sitekey: "6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a",
+                    sitekey: '6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a',
                     callback: successCallback,
                 });
             }
             </script>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 <!-- google recaptcha end here -->
 
     <!-- google -->

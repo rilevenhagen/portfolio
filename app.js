@@ -24,5 +24,5 @@ animationApp.init = () => {
 function successCallback () {
     debugger;
 } 
-successCallback();
+
 animationApp.init();
