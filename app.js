@@ -1,6 +1,6 @@
 
 const animationApp = {}
-const reCaptchGoggle = {}
+// const reCaptchGoggle = {}
 
 // hamburger menu ==========>
 
@@ -22,8 +22,8 @@ animationApp.init = () => {
 
 }
 
-reCaptchGoggle.successCallback () = (token) => {
-    debugger;
-} 
+// reCaptchGoggle.successCallback () = () => {
+//     alert(grecaptcha.getResponse)
+// } 
 
 animationApp.init();
