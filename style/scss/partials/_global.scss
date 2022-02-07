@@ -225,16 +225,21 @@ h2{
 }
 
 .btn{
+    font-family: $fontFamily2;
+    font-weight: bolder;
     font-size: 1rem;
     text-decoration: none;
     background-color: transparent;
     color: $black;
-    border-radius: 12px;
     border: 2px solid $black;
+    border-radius: 12px;
     padding: 9px;
     padding-top: 12px;
     text-align: center;
     display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 8px;
 }
 
 .btn:hover, .btn:focus {
@@ -334,4 +339,79 @@ ul{
             transform: scale(20) skew(-20deg);
         }
     }
+}
+
+
+
+// =================form
+
+form{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.submit{
+    max-width: 1280px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: end;
+    margin-right: 128px;
+}
+
+// .formDivInpName{
+//     width: 90%;
+//     margin: 0 auto;
+// }
+
+.formContiner{
+    width: 100%;
+    label{
+        padding: 10px;
+        display: flex;
+        font-size: 1.2rem;
+        text-align: start;
+        font-family: $fontFamily2;
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+}
+.formElement{
+    appearance: none;
+    outline: none;
+}
+
+input{
+    width:95%;
+    padding: 5px;
+}
+
+textarea{
+    resize: none;
+    width:95%;
+    height: 250px;
+}
+
+button{
+    font-family: $fontFamily2;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: $black;
+    border: 2px solid $black;
+    border-radius: 12px;
+    padding: 9px;
+    padding-top: 12px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+}
+
+
+
+ button:hover, button:focus {
+    background-color:  $black;
+    color: $colorwite;
 }

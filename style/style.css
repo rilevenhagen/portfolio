@@ -418,16 +418,21 @@ h2 {
 }
 
 .btn {
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bolder;
   font-size: 1rem;
   text-decoration: none;
   background-color: transparent;
   color: black;
-  border-radius: 12px;
   border: 2px solid black;
+  border-radius: 12px;
   padding: 9px;
   padding-top: 12px;
   text-align: center;
   display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 8px;
 }
 
 .btn:hover, .btn:focus {
@@ -509,6 +514,73 @@ ul li .nav404:hover, ul li .nav404:focus {
   color: #68868C;
   border-bottom: 1px solid #68868C;
   transform: scale(20) skew(-20deg);
+}
+
+form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.submit {
+  max-width: 1280px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: end;
+  margin-right: 128px;
+}
+
+.formContiner {
+  width: 100%;
+}
+.formContiner label {
+  padding: 10px;
+  display: flex;
+  font-size: 1.2rem;
+  text-align: start;
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.formElement {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+
+input {
+  width: 95%;
+  padding: 5px;
+}
+
+textarea {
+  resize: none;
+  width: 95%;
+  height: 250px;
+}
+
+button {
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 9px;
+  padding-top: 12px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+}
+
+button:hover, button:focus {
+  background-color: black;
+  color: #ffffff;
 }
 
 nav {
