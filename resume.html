@@ -9,16 +9,22 @@
 
 
     <!-- google -->
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<!-- ================ -->
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCKEDMY4XL"></script>
+
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCKEDMY4XL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-YCKEDMY4XL');
-    </script>
+    </script> -->
 
     <!-- ================================================= -->
 
@@ -66,43 +72,94 @@
 
     <!--====================================section before footer start here==================-->
 
-    <section  id="contact">
+    <section id="contact">
         <div class="formContiner wrapper">
             <form class="contact" name="contact" data-netlify="true" method="POST" action="index.html">
                 <input type="hidden" name="form-name" value="contact">
-               
-                    <label for="firstname" id="firstname">Name*</label>
-                    <input type="text" name="firstname" id="firstname" required class="formElement">
-               
-        
-                
-                    <label for="subject" id="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" required class="formElement">
-              
-        
-                
-                    <label for="email" id="lastname">Email*</label>
-                    <input type="text" name="lastname" id="lastname" required class="formElement">
-                
-        
-                
-                    <label for="message" id="message" rows="10" cols="30">Let's chat!!!</label>
-                    <textarea name="message" id="message" required class="formElement"></textarea>
-                
-        
+
+                <label for="firstname" id="firstname">Name*</label>
+                <input type="text" name="firstname" id="firstname" required class="formElement">
+
+
+
+                <label for="subject" id="subject">Subject</label>
+                <input type="text" name="subject" id="subject" required class="formElement">
+
+
+
+                <label for="email" id="email">Email*</label>
+                <input type="text" name="email" id="email" required class="formElement">
+
+
+
+                <label for="message" id="message" rows="10" cols="30">Let's chat!!!</label>
+                <textarea name="message" id="message" required class="formElement"></textarea>
+
+
                 <div class="submit">
                     <button type="submit">Send</button>
-                                    <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a>
+                    <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a>
                 </div>
+                <div class="g-recaptcha" data-sitekey="your_site_key">
+                    
+                </div>
+                <br />
+
+                <div class="status">
+                <php
+                if(isset($_POST['submit']))
+                {
+                        $User_name = $_POST['firstname'];
+                        $Subject = $_POST['subject'];
+                        $User_email = $_POST['email'];
+                        $User_message = $_POST['message'];
+
+                        $email_form = 'rlevenhagen@gmail.com';
+                        $email_subject = 'New Form submission';
+                        $email_body =   'Name: $User_name.\n';
+                                        'Name: $Subject.\n';
+                                        'Name: $User_email.\n';
+                                        'Name: $User_message.\n';
+                        
+                        $to_email = "rlevenhagen@gmail.com";
+                        $headers = "form: $email_form \r\n";
+                        $headers .= "Replay-To: $user_email\r\n"; 
+
+
+                        $secretKey = '6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a';
+                        $responseKey = $_POST['g=recaptcha-response'];
+                        $userIP = $SERVER['REOMTE_ADDR'];
+                        $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP;
+
+
+                        $response = file_get_contents($url);
+                        $response = json_decodes($response);
+                    
+                        if ($response->success)
+                        {
+                            mail($to_email,$email_form,$email_subject,$email_body,$headers)
+                            echo "Message sent Successfully";
+                        }
+                        else 
+                        {
+                            echo "Invalid Captcha, Please try again" 
+                        }
+
+                    }
+
+                ?>                    
+                </div>
+
+
             </form>
 
-        <!-- <div > -->
+            <!-- <div > -->
             <!-- <div class="contact-me">
                 <h2 class="getInTfooter">Get In Touch</h2>
                 <a class="btn" href="mailto:rlevenhagen@gmail.com">CONTACT ME</a> -->
-                <!-- <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a> -->
+            <!-- <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a> -->
             <!-- </div> -->
-        <!-- </div> -->
+            <!-- </div> -->
 
         </div>
 
