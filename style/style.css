@@ -418,16 +418,21 @@ h2 {
 }
 
 .btn {
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bolder;
   font-size: 1rem;
   text-decoration: none;
   background-color: transparent;
   color: black;
-  border-radius: 12px;
   border: 2px solid black;
+  border-radius: 12px;
   padding: 9px;
   padding-top: 12px;
   text-align: center;
   display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 8px;
 }
 
 .btn:hover, .btn:focus {
@@ -511,24 +516,9 @@ ul li .nav404:hover, ul li .nav404:focus {
   transform: scale(20) skew(-20deg);
 }
 
-.contactMainSection {
-  width: 90%;
-  padding-top: 100px;
-  margin-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.continer1, .continer2 {
-  width: 50%;
-}
-
-.formContiner {
-  width: 90%;
+form {
+  width: 75%;
   margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .submit {
@@ -539,20 +529,17 @@ ul li .nav404:hover, ul li .nav404:focus {
   margin-right: 128px;
 }
 
-form {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px;
-  background-color: #c6c2c2;
-  margin-bottom: 50px;
+.formContiner {
+  width: 100%;
 }
-
 .formContiner label {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  font-size: 1.2rem;
+  text-align: start;
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
 }
 
 .formElement {
@@ -560,12 +547,40 @@ form {
      -moz-appearance: none;
           appearance: none;
   outline: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 95%;
+  padding: 5px;
 }
 
 textarea {
   resize: none;
-  min-width: 100px;
+  width: 95%;
+  height: 250px;
+}
+
+button {
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 9px;
+  padding-top: 12px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+}
+
+button:hover, button:focus {
+  background-color: black;
+  color: #ffffff;
 }
 
 nav {
