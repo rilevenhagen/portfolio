@@ -1,5 +1,6 @@
 
 const animationApp = {}
+const reCaptchGoggle = {}
 
 // hamburger menu ==========>
 
@@ -21,7 +22,7 @@ animationApp.init = () => {
 
 }
 
-function successCallback () {
+reCaptchGoggle.successCallback () = (token) => {
     debugger;
 } 
 

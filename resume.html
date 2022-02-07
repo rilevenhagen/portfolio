@@ -13,7 +13,7 @@
             function onloadCallback() {
                 grecaptcha.render('divRecaptcha', {
                     sitekey: '6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a',
-                    callback: successCallback,
+                    callback: reCaptchGoggle.successCallback,
                 });
             }
             </script>
@@ -81,7 +81,7 @@
 
     <section  id="contact">
         <div class="formContiner wrapper">
-            <form class="contact" name="contact" data-netlify="true" method="POST" action="index.html">
+            <form class="contact" name="contact" data-netlify="true" method="POST" action="javascript:alert(grecaptcha.getResponse(successCallback)), index.html">
                 <input type="hidden" name="form-name" value="contact">
                
                     <label for="firstname" id="firstname">Name*</label>
