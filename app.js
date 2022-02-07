@@ -21,4 +21,5 @@ animationApp.init = () => {
 
 }
 
+
 animationApp.init();
