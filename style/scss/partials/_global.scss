@@ -358,10 +358,6 @@ form{
     margin-right: 128px;
 }
 
-// .formDivInpName{
-//     width: 90%;
-//     margin: 0 auto;
-// }
 
 .formContiner{
     width: 100%;
@@ -411,7 +407,58 @@ button{
 
 
 
- button:hover, button:focus {
+button:hover, button:focus {
+    background-color:  $black;
+    color: $colorwite;
+}
+
+
+// ===========Thx page===============
+
+.pageThx{
+    background-color: rgba($color: $darkColor, $alpha: 0.3);
+}
+
+.thx{
+    
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.thxFooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.thxMessge{
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thxbtn{
+    font-family: $fontFamily2;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: $black;
+    border: 2px solid $black;
+    border-radius: 12px;
+    padding: 9px;
+    padding-top: 12px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+}
+
+.thxbtn:hover, .thxbtn:focus {
     background-color:  $black;
     color: $colorwite;
 }
