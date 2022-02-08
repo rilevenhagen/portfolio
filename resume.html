@@ -10,8 +10,8 @@
 
     <!-- google -->
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 
 <!-- ================ -->
 
@@ -97,7 +97,7 @@
 
 
                 <div class="submit">
-                    <button type="submit">Send</button>
+                    <button onclick="checkRecaptcha();" type="submit">Send</button>
                     <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a>
                 </div>
                 <div class="g-recaptcha" data-sitekey="6LdV6WIeAAAAAMiMUSgL_UmLyjzi60AxZSJeLA_a">
