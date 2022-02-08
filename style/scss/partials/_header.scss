@@ -139,8 +139,13 @@ h1{
 
 .hamburger:focus{
     outline: none;
+    background-color: transparent;
 }
 
+.hamburger:hover{
+    color: $black;
+    background-color: transparent;
+}
 
 // ================== animation starts here======
 
