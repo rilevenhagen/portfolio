@@ -583,6 +583,53 @@ button:hover, button:focus {
   color: #ffffff;
 }
 
+.pageThx {
+  background-color: rgba(29, 29, 29, 0.3);
+}
+
+.thx {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.thxFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.thxMessge {
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thxbtn {
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 9px;
+  padding-top: 12px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+}
+
+.thxbtn:hover, .thxbtn:focus {
+  background-color: black;
+  color: #ffffff;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -725,6 +772,12 @@ h1 {
 
 .hamburger:focus {
   outline: none;
+  background-color: transparent;
+}
+
+.hamburger:hover {
+  color: black;
+  background-color: transparent;
 }
 
 .intro {
@@ -973,8 +1026,8 @@ h1 {
     line-height: 1.6rem;
     position: absolute;
     background-color: rgba(28, 28, 28, 0.2);
-    left: 34px;
-    top: -5px;
+    left: 47px;
+    top: 8px;
   }
 
   .navUl.show {

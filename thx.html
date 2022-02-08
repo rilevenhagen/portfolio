@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-
 
     <!-- google -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCKEDMY4XL"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCKEDMY4XL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-YCKEDMY4XL');
-    </script>
+    </script> -->
 
     <!-- ================================================= -->
+
+    <link rel="stylesheet" href="./style/style.css">
 
     <!--===========================================fontawesome=================================-->
 
@@ -35,120 +35,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Source+Serif+4:wght@200&display=swap"
         rel="stylesheet">
     <!--=========================================font family ends here===========================-->
-    <title>Resume</title>
 
+    <title>Thank you</title>
 </head>
 
-<body class="resBody">
-
-    <header class="headerResume">
-        <div class="navCont">
-            <nav class="wrapper navCont2">
-                <div class="humburgerBtCont">
-                    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
-                </div>
-                <ul id="navUl" class="navUl">
-                    <li><a class="aNav" href="/index.html">Home</a></li>
-                    <li><a class="aNav" href="/index.html#about">About me</a></li>
-                    <li><a class="aNav" href="index.html#projects">Project</a></li>
-                    <li><a class="aNav" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<body class="pageThx">
+    <!-- Is just a 404 page for fun  no header -->
+    <section class="thx">
+        <div>
+            <div class="navCont">
+                <nav class="wrapper navCont2">
+                    <div class="humburgerBtCont">
+                        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <ul id="navUl" class="navUl">
+                        <li><a class="aNav nav404" href="index.html">Home</a></li>
+                        <li><a class="aNav nav404" href="about.html">About me</a></li>
+                        <li><a class="aNav nav404" href="resume.html">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </header>
 
     <main>
-        <div class=" wrapper resCont">
-            <img class="resume" src="./assets/Resume.png" alt="" srcset="">
-        </div>
+        <section class="wrapper thxMessge">
+            <div>
+                <h3>Thank you to get in touch!!!</h3>
+                <a class="thxbtn" href="index.html">Return to the main page</a>
+            </div>
+        </section>
     </main>
-
-
-    <!--====================================section before footer start here==================-->
-
-    <section id="contact">
-        <div class="formContiner wrapper">
-            <form class="contact" name="contact" data-netlify="true" method="POST" action="thx.html">
-                <input type="hidden" name="form-name" value="contact">
-
-                <label for="firstname" id="firstname">Name*</label>
-                <input type="text" name="firstname" id="firstname" required class="formElement">
-
-
-
-                <label for="subject" id="subject">Subject</label>
-                <input type="text" name="subject" id="subject" required class="formElement">
-
-
-
-                <label for="email" id="lastname">Email*</label>
-                <input type="text" name="lastname" id="lastname" required class="formElement">
-
-
-
-                <label for="message" id="message" rows="10" cols="30">Let's chat!!!</label>
-                <textarea name="message" id="message" required class="formElement"></textarea>
-
-
-                <div class="submit">
-                    <button type="submit">Send</button>
-                    <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a>
-                </div>
-            </form>
-
-            <!-- <div > -->
-            <!-- <div class="contact-me">
-                <h2 class="getInTfooter">Get In Touch</h2>
-                <a class="btn" href="mailto:rlevenhagen@gmail.com">CONTACT ME</a> -->
-            <!-- <a class="btn" href="" download="./assets/Ricardo-Levenhagen-Resume.pdf">Download resume</a> -->
-            <!-- </div> -->
-            <!-- </div> -->
-
-        </div>
-
-
-    </section>
-
-    <!--====================================section before footer ends here==================-->
-
-    <footer>
-
+    <footer class="thxFooter">
+    
         <div class="footerSocialMidia">
-
+    
             <div class="wrapper footerCont">
                 <p class="pFooter">Build and Designed by Ricardo Levenhagen 2022</p>
             </div>
             <!-- ===================social =============== -->
-
+    
             <div class="wrapper socialMidia">
                 <div class="midiaContainer">
-
+    
                     <a href="https://www.linkedin.com/in/ricardo-levenhagen-54731a6a/" target="_blank"><i
                             class="fab fa-linkedin" aria-hidden="true"> <span class="sr-only">Linkedin</span></i></a>
-
+    
                     <a href="https://github.com/rilevenhagen" target="_blank"><i class="fab fa-github-square"
                             aria-hidden="true"><span class="sr-only">Github</span></i></a>
-
+    
                     <a href="https://twitter.com/Levenhagen" target="_blank"><i class="fab fa-twitter-square"
                             aria-hidden="true"><span class="sr-only">Twitter</span></i></a>
-
+    
                     <a href="https://www.instagram.com/levenhagen/" target="_blank"><i class="fab fa-instagram-square"
                             aria-hidden="true"><span class="sr-only">Instagram</span></i></a>
-
+    
                     <a href="https://medium.com/@Levenhagen" target="_blank"><i class="fab fa-medium"
                             aria-hidden="true"><span class="sr-only">Medium</span></i></a>
                 </div>
             </div>
-
+    
         </div>
-
+    
     </footer>
-
+    
     <!--==================================== footer ends here===========================-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"></script>
     <script src="./app.js"></script>
-</body>
 
-</html>
+    </body>
+    
+    </html>
