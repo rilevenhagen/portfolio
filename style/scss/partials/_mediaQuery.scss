@@ -15,6 +15,13 @@
     font-size: 2rem;
 }
 
+.btnProj {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 }
 
 
@@ -74,8 +81,9 @@ ul {
     }
 
 .btnProj {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
 }
 
 }
@@ -141,7 +149,7 @@ width: 45%;
 
 
 .aboutCont {
-    min-height: 127vh;
+    min-height: 80vh;
 }
 
 
@@ -172,9 +180,7 @@ ul {
     width: 35%;
 }
 
-.pAboutMe {
-    font-size: 0.8rem;
-}
+
 
 .footerSocialMidia{
     flex-direction: column-reverse;

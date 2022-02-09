@@ -244,8 +244,20 @@ html {
   width: 90%;
 }
 
+h3 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+p {
+  font-family: "Prompt", sans-serif;
+  line-height: 2rem;
+  letter-spacing: 0.02rem;
+  text-align: justify;
+}
+
 header {
-  background-image: url(../assets/hero.jpg);
+  background-image: url(../assets/hero2.jpg);
   margin: 0 auto;
   min-height: 100vh;
   width: 100%;
@@ -263,16 +275,26 @@ header {
   margin: 0 auto;
 }
 
+.imgH3Box {
+  width: 20%;
+}
+
 .imgSkill {
-  width: 15%;
-  margin: 30px 70px;
+  width: 35%;
+  margin: 30px 70px -7px;
 }
 
 .skill {
   text-align: center;
-  font-family: "Source Serif 4", sans-serif;
-  font-size: 4rem;
+  font-family: "Prompt", sans-serif;
+  font-size: 2rem;
   margin-bottom: 5rem;
+}
+
+.h2Skill {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-family: "Prompt", sans-serif;
 }
 
 .portfolioCont {
@@ -288,38 +310,36 @@ header {
 }
 
 .portImgTxtCont {
-  width: calc(50% - 1rem);
-  margin-right: 1rem;
-  margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
+  width: 40%;
+  margin: 2rem auto;
 }
 
 .h2Prot {
   margin-top: 15px;
+  font-size: 2rem;
+  font-family: "Prompt", sans-serif;
 }
 
 .project {
   text-align: left;
-  font-family: "Source Serif 4", sans-serif;
-  font-size: 2rem;
   width: 100%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .project p {
-  font-size: 1.3rem;
   margin-top: 5px;
 }
 
 .imgPortifolio {
   width: 100%;
-  box-shadow: 6px 7px #1d1d1d;
+  border: 0.03rem solid black;
 }
 
 h2 {
-  text-transform: uppercase;
+  font-family: "Prompt", sans-serif;
   margin-bottom: 20px;
+  font-size: 1.6rem;
 }
 
 .btnProj {
@@ -329,9 +349,9 @@ h2 {
 }
 
 .aboutCont {
-  background-image: url(../assets/Caraguatatuba---20140201--229.jpg);
+  background-color: rgba(199, 199, 199, 0.202);
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 90% vh;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -340,7 +360,7 @@ h2 {
 
 .aboutMe {
   text-align: center;
-  font-family: "Source Serif 4", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -365,26 +385,26 @@ h2 {
 }
 
 .h2About {
+  margin-top: 15px;
+  font-size: 2rem;
   color: #1d1d1d;
   text-align: left;
-  -webkit-text-stroke: 1.5px black;
+  margin-bottom: -14px;
 }
 
 .pAboutMe {
   font-size: 1.5rem;
   color: #1d1d1d;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 1.5rem;
-  letter-spacing: 0.4rem;
-  line-height: 2.5rem;
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.7rem;
   width: 100%;
-  -webkit-text-stroke: 1.5px black;
 }
 
 .portrait {
-  width: 95%;
+  width: 85%;
   border: 2px solid black;
   border-radius: 100%;
   background-color: #EDEDED;
@@ -418,26 +438,39 @@ h2 {
 }
 
 .btn {
-  font-family: "Source Serif 4", sans-serif;
-  font-weight: bolder;
-  font-size: 1rem;
-  text-decoration: none;
-  background-color: transparent;
+  border: 1px solid black;
   color: black;
-  border: 2px solid black;
-  border-radius: 12px;
-  padding: 9px;
-  padding-top: 12px;
-  text-align: center;
-  display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 8px;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  font-family: "Prompt", sans-serif;
+  z-index: 0;
 }
 
 .btn:hover, .btn:focus {
-  background-color: black;
-  color: #EDEDED;
+  color: #ffffff;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #1d1d1d;
+  z-index: -1;
+  transition: 0.5s;
+  top: 0;
+}
+
+.btn:hover::before {
+  height: 100%;
 }
 
 .footerSocialMidia {
@@ -499,7 +532,7 @@ footer {
 
 ul li .nav404 {
   text-decoration: none;
-  font-family: "Source Serif 4", sans-serif;
+  font-family: "Prompt", sans-serif;
   color: #EDEDED;
   letter-spacing: 0.2rem;
   font-size: 1.3rem;
@@ -537,7 +570,7 @@ form {
   display: flex;
   font-size: 1.2rem;
   text-align: start;
-  font-family: "Source Serif 4", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-weight: bolder;
   font-size: 1rem;
 }
@@ -561,26 +594,38 @@ textarea {
 }
 
 button {
-  font-family: "Source Serif 4", sans-serif;
-  font-weight: bolder;
-  font-size: 1rem;
-  text-decoration: none;
-  background-color: transparent;
+  border: 1px solid black;
   color: black;
-  border: 2px solid black;
-  border-radius: 12px;
-  padding: 9px;
-  padding-top: 12px;
-  text-align: center;
-  display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 8px;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  font-family: "Prompt", sans-serif;
 }
 
 button:hover, button:focus {
-  background-color: black;
   color: #ffffff;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #1d1d1d;
+  z-index: -1;
+  transition: 0.5s;
+  top: 0;
+}
+
+button:hover::before {
+  height: 100%;
 }
 
 .pageThx {
@@ -608,26 +653,38 @@ button:hover, button:focus {
 }
 
 .thxbtn {
-  font-family: "Source Serif 4", sans-serif;
-  font-weight: bolder;
-  font-size: 1rem;
-  text-decoration: none;
-  background-color: transparent;
+  border: 1px solid black;
   color: black;
-  border: 2px solid black;
-  border-radius: 12px;
-  padding: 9px;
-  padding-top: 12px;
-  text-align: center;
-  display: inline-block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 8px;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  font-family: "Prompt", sans-serif;
 }
 
 .thxbtn:hover, .thxbtn:focus {
-  background-color: black;
   color: #ffffff;
+}
+
+.thxbtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #1d1d1d;
+  z-index: -1;
+  transition: 0.5s;
+  top: 0;
+}
+
+.thxbtn:hover::before {
+  height: 100%;
 }
 
 nav {
@@ -647,7 +704,7 @@ ul li {
 }
 ul li .aNav {
   text-decoration: none;
-  font-family: "Source Serif 4", sans-serif;
+  font-family: "Prompt", sans-serif;
   color: #ffffff;
   letter-spacing: 0.2rem;
   font-size: 1.3rem;
@@ -678,7 +735,7 @@ ul li .aNav {
 }
 
 h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   letter-spacing: 7px;
   font-size: 3rem;
@@ -686,7 +743,7 @@ h1 {
 }
 
 .pMyName {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   letter-spacing: 7px;
   font-size: 1.7rem;
@@ -781,7 +838,7 @@ h1 {
 }
 
 .intro {
-  background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+  background-image: url(../assets/morro-de-caxambu---20140829--303.jpg);
   background-size: cover;
   background-position: bottom;
   position: fixed;
@@ -795,17 +852,18 @@ h1 {
   justify-content: flex-end;
   align-items: flex-end;
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .text {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   letter-spacing: 7px;
   font-size: 3rem;
 }
 
 .text2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   letter-spacing: 7px;
   font-size: 1.5rem;
@@ -852,6 +910,7 @@ h1 {
 .resume {
   width: 100%;
   margin-top: 60px;
+  margin-bottom: 45px;
 }
 
 @media (max-width: 990px) {
@@ -866,6 +925,13 @@ h1 {
   .h1Error {
     margin-top: 25%;
     font-size: 2rem;
+  }
+
+  .btnProj {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 950px) {
@@ -913,8 +979,9 @@ h1 {
   }
 
   .btnProj {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
   }
 }
 @media (max-width: 875px) {
@@ -966,7 +1033,7 @@ h1 {
   }
 
   .aboutCont {
-    min-height: 127vh;
+    min-height: 80vh;
   }
 
   ul li .aNav {
@@ -989,10 +1056,6 @@ h1 {
 
   .portrait {
     width: 35%;
-  }
-
-  .pAboutMe {
-    font-size: 0.8rem;
   }
 
   .footerSocialMidia {
@@ -1061,14 +1124,14 @@ h1 {
   }
 
   .text {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
     letter-spacing: 1px;
     font-size: 1.7rem;
   }
 
   .text2 {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
     letter-spacing: 2px;
     font-size: 1rem;

@@ -150,7 +150,7 @@ h1{
 // ================== animation starts here======
 
 .intro{
-    background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+    background-image: url(../assets/morro-de-caxambu---20140829--303.jpg);
     background-size: cover;
     background-position: bottom;
     position: fixed;
@@ -164,6 +164,7 @@ h1{
     justify-content: flex-end;
     align-items: flex-end;
     background-repeat: no-repeat;
+    z-index: 10;
 }
 
 
@@ -182,7 +183,7 @@ h1{
 }
 
 .slider{
-background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
+    background-image: url(../assets/lona-grande-1---20112014--1251.jpg);
     background-size: cover;
     background-position: bottom;
     position: fixed;
