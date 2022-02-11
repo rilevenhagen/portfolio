@@ -170,6 +170,7 @@ ul {
 .h2Prot, .h2Sill, .h2About {
     margin-top: 20px;
     font-size: 2.4rem;
+    margin-bottom: 20px;
 }
 
 .portImgTxtCont {
@@ -221,8 +222,8 @@ ul {
     line-height: 1.6rem;
     position: absolute;
     background-color: $darkLNavColor;
-    left: 47px;
-    top: 8px;
+    left: 60px;
+    top: 7px;
 }
 
 
@@ -236,8 +237,16 @@ ul {
 
 // hamburger menu ends here =============
 
+.portImgTxtCont {
+    width: 90%;
+}
+
+p{
+    text-align: center;
+}
+
 .imgSkill {
-width: 18%;
+width: 50%;
 margin: 10px 29px;
 }
 
@@ -256,6 +265,10 @@ width: 25%;
 .pAboutMe {
     font-size: 0.7rem;
     letter-spacing: 0.2rem;
+    margin: 0 auto;
+    width: 90%;
+    text-align: inherit;
+    font-size: 0.9rem;
 }
 // ====animation
 
@@ -264,7 +277,10 @@ width: 25%;
     color: white;
     letter-spacing: 1px;
     font-size: 1.7rem;
-    }
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
 
 .text2{
     font-family: $fontFamily1;
@@ -315,6 +331,11 @@ h1 {
 
 header{
     background-attachment: scroll;
+}
+
+.imgH3Box {
+    width: 30%;
+    margin: 5px;
 }
 
 .aboutCont{
