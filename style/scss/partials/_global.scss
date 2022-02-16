@@ -51,6 +51,27 @@ header {
     background-size: cover; 
 }
 
+.copyRight {
+    font-family: $fontFamily2;
+    color: $lightgrayColor;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 20px;
+}
+
+.animatioCR{
+    line-height: 1rem;
+    color: rgba($color: #000000, $alpha: 1.0);
+}
+
+.intro{
+    .animatioCR{
+        line-height: 1rem;
+        color: rgba(255,255,255, 0.3)
+    }
+}
 
 //===================== image styles ============
 
@@ -196,6 +217,7 @@ h2{
 }
 
 .pAboutMe{
+    text-align: center;
     font-size: 1.5rem;
     color: $darkColor;
     font-family: $fontFamily1;
