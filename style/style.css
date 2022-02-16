@@ -266,6 +266,26 @@ header {
   background-size: cover;
 }
 
+.copyRight {
+  font-family: "Prompt", sans-serif;
+  color: #efefef;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 20px;
+}
+
+.animatioCR {
+  line-height: 1rem;
+  color: black;
+}
+
+.intro .animatioCR {
+  line-height: 1rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .imgSkills {
   display: flex;
   flex-direction: row;
@@ -396,6 +416,7 @@ h2 {
 }
 
 .pAboutMe {
+  text-align: center;
   font-size: 1.5rem;
   color: #1d1d1d;
   font-family: "Montserrat", sans-serif;
@@ -1194,6 +1215,11 @@ h1 {
 
   header {
     background-attachment: scroll;
+  }
+
+  .copyRight {
+    line-height: 0.9rem;
+    margin-left: 10px;
   }
 
   .imgH3Box {
