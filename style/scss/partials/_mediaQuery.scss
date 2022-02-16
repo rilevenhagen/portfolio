@@ -1,4 +1,16 @@
 // ===============media Query===================
+@media (max-width: 1150px){
+.submit{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+}
+
+
 
 @media (max-width: 990px) {
     h1{
@@ -350,7 +362,6 @@ header{
 .aboutCont{
     background-attachment: scroll;
 }
-
 
 
 }
