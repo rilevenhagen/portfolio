@@ -6,6 +6,8 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin: 0 auto;
+
 }
 
 }
@@ -234,8 +236,8 @@ ul {
     line-height: 1.6rem;
     position: absolute;
     background-color: $darkLNavColor;
-    left: 60px;
-    top: 7px;
+    left: 34px;
+    top: -3px;
 }
 
 
@@ -316,6 +318,12 @@ width: 25%;
     margin-left: 0px;
     background-color: rgba($color: #000000, $alpha: 0.4);
 }
+.submit{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 
 }
 
@@ -363,6 +371,12 @@ header{
     background-attachment: scroll;
 }
 
+.submit{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 
 }
 
