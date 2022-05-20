@@ -372,7 +372,7 @@ h2 {
 }
 
 .aboutCont {
-  background-color: rgba(199, 199, 199, 0.202);
+  background-color: hsla(0deg, 0%, 78%, 0.202);
   margin: 0 auto;
   min-height: 90% vh;
   width: 100%;

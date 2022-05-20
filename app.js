@@ -1,3 +1,20 @@
+console.log(`⤵️⤵️⤵️⤵️⤵️⤵️⤵️🤜🏻🤪🤛🏻  ⤵️⤵️⤵️⤵️⤵️⤵️⤵️
+
+
+
+    “If opportunity doesn't knock, build a door.”
+    Milton Berle
+
+
+
+    “If somebody offers you an amazing opportunity but you are not sure you can do it, say yes – then learn how to do it later.”
+    Richard Branson
+
+
+    "Your talent determines what you can do. Your motivation determines how much you are willing to do. Your attitude determines how well you do it." 
+    Lou Holtz
+
+`)
 
 const animationApp = {}
 
