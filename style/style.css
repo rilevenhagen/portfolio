@@ -8,7 +8,12 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article,
+aside,
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
@@ -17,7 +22,9 @@ h1 {
   margin: 0.67em 0;
 }
 
-figcaption, figure, main {
+figcaption,
+figure,
+main {
   display: block;
 }
 
@@ -48,15 +55,19 @@ abbr[title] {
           text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -74,7 +85,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -89,7 +101,8 @@ sup {
   top: -0.5em;
 }
 
-audio, video {
+audio,
+video {
   display: inline-block;
 }
 
@@ -106,31 +119,46 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, html [type=button], [type=reset], [type=submit] {
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -156,12 +184,14 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -170,7 +200,8 @@ textarea {
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -179,7 +210,8 @@ textarea {
   font: inherit;
 }
 
-details, menu {
+details,
+menu {
   display: block;
 }
 
@@ -212,7 +244,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -324,6 +358,7 @@ header {
   background-color: #EDEDED;
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 67px;
 }
 
 .potImgTxt {
@@ -376,9 +411,6 @@ h2 {
   margin: 0 auto;
   min-height: 90% vh;
   width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .aboutMe {
@@ -387,8 +419,8 @@ h2 {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-top: 150px;
+  width: 95%;
+  margin-top: 24px;
 }
 
 .aboutMeCont2 {
@@ -412,7 +444,7 @@ h2 {
   font-size: 2rem;
   color: #1d1d1d;
   text-align: left;
-  margin-bottom: -14px;
+  margin-bottom: 25px;
 }
 
 .pAboutMe {
@@ -428,7 +460,7 @@ h2 {
 }
 
 .portrait {
-  width: 85%;
+  width: 30%;
   border: 2px solid black;
   border-radius: 100%;
   background-color: #EDEDED;
@@ -477,7 +509,8 @@ h2 {
   z-index: 0;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #ffffff;
 }
 
@@ -567,7 +600,8 @@ ul li .nav404 {
   margin-left: 1rem;
 }
 
-ul li .nav404:hover, ul li .nav404:focus {
+ul li .nav404:hover,
+ul li .nav404:focus {
   color: #68868C;
   border-bottom: 1px solid #68868C;
   transform: scale(20) skew(-20deg);
@@ -656,7 +690,8 @@ textarea {
   font-family: "Prompt", sans-serif;
 }
 
-.thxbtn:hover, .thxbtn:focus {
+.thxbtn:hover,
+.thxbtn:focus {
   color: #ffffff;
 }
 
@@ -1046,10 +1081,13 @@ h1 {
     margin: 20px 40px;
   }
 
-  .h2Prot, .h2Sill, .h2About {
+  .h2Prot,
+.h2Sill,
+.h2About {
     margin-top: 20px;
-    font-size: 2.4rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .portImgTxtCont {

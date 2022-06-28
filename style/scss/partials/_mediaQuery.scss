@@ -1,233 +1,206 @@
 // ===============media Query===================
-@media (max-width: 1150px){
-.submit{
+@media (max-width: 1150px) {
+  .submit {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     margin: 0 auto;
-
+  }
 }
-
-}
-
-
 
 @media (max-width: 990px) {
-    h1{
-        font-size: 2.7rem;
-    }
+  h1 {
+    font-size: 2.7rem;
+  }
 
-
-.pMyName {
+  .pMyName {
     font-size: 1.5rem;
-}
+  }
 
-.h1Error{
+  .h1Error {
     margin-top: 25%;
     font-size: 2rem;
-}
+  }
 
-.btnProj {
+  .btnProj {
     margin-left: 15px;
     margin-right: 15px;
     display: flex;
     flex-wrap: wrap;
+  }
 }
-
-}
-
 
 @media (max-width: 950px) {
-
-.wrapper {
+  .wrapper {
     max-width: 950px;
     width: 90%;
-}
+  }
 
-ul {
-        li {
-            .aNav{
-            font-size: 1rem;    
-            }
-        }
+  ul {
+    li {
+      .aNav {
+        font-size: 1rem;
+      }
     }
+  }
 
-.skill {
+  .skill {
     font-size: 3rem;
-}
+  }
 
-.imgSkills {
+  .imgSkills {
     width: 100%;
-}
+  }
 
-.pAboutMe {
+  .pAboutMe {
     font-size: 1.2rem;
-}
+  }
 
-.portrait {
+  .portrait {
     width: 77%;
-}
+  }
 
-.aboutCont{
-margin-top: 55px;
-}
-.pFooter{
+  .aboutCont {
+    margin-top: 55px;
+  }
+  .pFooter {
     font-size: 0.9rem;
+  }
 }
-}
-
 
 @media (max-width: 902px) {
-
-.wrapper {
+  .wrapper {
     max-width: 902px;
     width: 90%;
-}
+  }
 
-ul {
-        li {
-            .aNav{
-            font-size: 0.9rem;    
-            }
-        }
+  ul {
+    li {
+      .aNav {
+        font-size: 0.9rem;
+      }
     }
+  }
 
-.btnProj {
+  .btnProj {
     margin-left: 0;
     margin-right: 0;
     justify-content: center;
-}
-
+  }
 }
 
 @media (max-width: 875px) {
-
-.wrapper {
+  .wrapper {
     max-width: 875px;
     width: 90%;
-}
+  }
 
-.pAboutMe{
+  .pAboutMe {
     font-size: 1rem;
-}
+  }
 
-.aboutMeCont3 {
+  .aboutMeCont3 {
     flex-direction: column;
-}
+  }
 
-.aboutCont{
+  .aboutCont {
     background-position: center;
-}
+  }
 
-.portrait {
-width: 45%;
-}
+  .portrait {
+    width: 45%;
+  }
 
-.h1Error{
+  .h1Error {
     margin-top: 25%;
     font-size: 1.7rem;
-}
+  }
 
-.intro{
+  .intro {
     padding-right: 1px;
-    
+  }
 }
-
-
-}
-
 
 @media (max-width: 835px) {
-
-.wrapper {
+  .wrapper {
     max-width: 835px;
     width: 90%;
-}
+  }
 
-.btnProj {
+  .btnProj {
     margin-left: 2%;
     margin-right: 2%;
-}
-
-
+  }
 }
 
 @media (max-width: 835px) {
-
-.wrapper {
+  .wrapper {
     max-width: 835px;
     width: 90%;
-}
+  }
 
-
-.aboutCont {
+  .aboutCont {
     min-height: 80vh;
-}
+  }
 
-
-ul {
-        li {
-            .aNav{
-            font-size: 0.8rem;    
-            }
-        }
+  ul {
+    li {
+      .aNav {
+        font-size: 0.8rem;
+      }
     }
+  }
 
-
-.imgSkill {
+  .imgSkill {
     width: 14%;
     margin: 20px 40px;
-}
+  }
 
-.h2Prot, .h2Sill, .h2About {
+  .h2Prot,
+  .h2Sill,
+  .h2About {
     margin-top: 20px;
-    font-size: 2.4rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
-}
+    text-align: center;
+  }
 
-.portImgTxtCont {
+  .portImgTxtCont {
     margin-top: 0.5rem;
-}
+  }
 
-.portrait {
+  .portrait {
     width: 35%;
-}
+  }
 
-
-
-.footerSocialMidia{
+  .footerSocialMidia {
     flex-direction: column-reverse;
-}
+  }
 
-
-.socialMidia a {
+  .socialMidia a {
     font-size: 1.5rem;
     margin: 22px 13px 0 13px;
-}
+  }
 
-.h1Error{
+  .h1Error {
     font-size: 1.3rem;
     text-align: center;
     margin-left: 0px;
     background-color: rgba($color: #000000, $alpha: 0.4);
-}
-
-
+  }
 }
 
 @media (max-width: 709px) {
-
-.wrapper {
+  .wrapper {
     max-width: 610px;
     width: 90%;
-}
+  }
 
-// hamburger menu =============
+  // hamburger menu =============
 
-
-.navUl{
+  .navUl {
     display: none;
     flex-direction: column;
     width: auto;
@@ -238,162 +211,152 @@ ul {
     background-color: $darkLNavColor;
     left: 34px;
     top: -3px;
-}
+  }
 
-
-.navUl.show{
+  .navUl.show {
     display: flex;
-}
+  }
 
-.hamburger{
+  .hamburger {
     display: block;
-}
+  }
 
-// hamburger menu ends here =============
+  // hamburger menu ends here =============
 
-.portImgTxtCont {
+  .portImgTxtCont {
     width: 90%;
-}
+  }
 
-p{
+  p {
     text-align: center;
-}
+  }
 
-.imgSkill {
-width: 50%;
-margin: 10px 29px;
-}
+  .imgSkill {
+    width: 50%;
+    margin: 10px 29px;
+  }
 
-.portImgTxtCont {
+  .portImgTxtCont {
     width: 100%;
-}
+  }
 
-.potImgTxt {
+  .potImgTxt {
     flex-direction: column;
-}
+  }
 
-.portrait {
-width: 25%;
-}
+  .portrait {
+    width: 25%;
+  }
 
-.pAboutMe {
+  .pAboutMe {
     font-size: 0.7rem;
     letter-spacing: 0.2rem;
     margin: 0 auto;
     width: 90%;
     text-align: inherit;
     font-size: 0.9rem;
-}
-// ====animation
+  }
+  // ====animation
 
-.text{
+  .text {
     font-family: $fontFamily1;
     color: white;
     letter-spacing: 1px;
     font-size: 1.7rem;
     margin-right: 20px;
     margin-left: 10px;
-}
+  }
 
-
-.text2{
+  .text2 {
     font-family: $fontFamily1;
     color: white;
     letter-spacing: 2px;
     font-size: 1rem;
-}
+  }
 
-.error404{
+  .error404 {
     padding-right: 0;
     padding-bottom: 0;
     margin-top: 0;
     background-attachment: scroll;
     background-repeat: repeat;
     background-size: contain;
-}
+  }
 
-.h1Error{
+  .h1Error {
     font-size: 1.3rem;
     text-align: center;
     margin-left: 0px;
     background-color: rgba($color: #000000, $alpha: 0.4);
-}
-.submit{
+  }
+  .submit {
     margin: 0 auto;
     display: flex;
     width: 100%;
     flex-direction: column;
+  }
 }
-
-}
-
 
 @media (max-width: 450px) {
-
-.wrapper {
+  .wrapper {
     max-width: 450px;
     width: 95%;
-}
+  }
 
-
-h1 {
+  h1 {
     font-size: 2.3rem;
-}
+  }
 
-.pMyName {
+  .pMyName {
     font-size: 1.2rem;
-}
+  }
 
-.h1Error{
+  .h1Error {
     margin-top: 25%;
     font-size: 1rem;
-}
+  }
 
-header{
+  header {
     background-attachment: scroll;
-}
+  }
 
-.copyRight {
+  .copyRight {
     line-height: 0.9rem;
     margin-left: 10px;
-}
+  }
 
-.imgH3Box {
+  .imgH3Box {
     width: 30%;
     margin: 5px;
-}
+  }
 
-.aboutCont{
+  .aboutCont {
     min-height: 85vh;
-}
+  }
 
-.aboutCont{
+  .aboutCont {
     background-attachment: scroll;
-}
+  }
 
-.submit{
+  .submit {
     margin: 0 auto;
     display: flex;
     width: 100%;
     flex-direction: column;
-}
-
+  }
 }
 
 @media (max-width: 355px) {
-.wrapper {
+  .wrapper {
     max-width: 355px;
     width: 95%;
-}
+  }
 
-
-h1 {
+  h1 {
     font-size: 1.8rem;
-}
+  }
 
-.pMyName{
+  .pMyName {
     font-size: 1rem;
-}
-
-
+  }
 }
